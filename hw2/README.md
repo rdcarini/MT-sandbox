@@ -9,7 +9,8 @@ There are three python programs here (`-h` for usage):
 
 The commands work in a pipeline. For instance:
 
-   > ./align -t 0.9 -n 1000 | ./check | ./grade -n 5
+   > ./dice_align -t 0.9 -n 1000 | ./check-alignments | ./score-alignments -n 5
+   > ./ibm_align -t 0.9 -n 1000 | ./check-alignments | ./score-alignments -n 5
 
 The `data` directory contains a fragment of the Canadian Hansards,
 aligned by Ulrich Germann:
